@@ -17,6 +17,9 @@ VIEW_PDF = 'evince'
 MAKED_EXTENSIONS = [".aux", ".dvi", ".fdb_latexmk", ".fls", ".log", ".pdf",
                     ".synctex.gz"]
 
+if not os.path.isfile(MAIN_BASENAME + '.tex'):
+    exit("[Error] {}.tex is not found.".format(MAIN_BASENAME))
+
 
 class Commands(list):
     def run(self):
