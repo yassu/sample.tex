@@ -8,6 +8,7 @@ import os.path
 
 AUTHOR = 'yassu'
 MAIN_BASENAME = os.path.split(os.getcwd())[-1].split('.')[0]
+    # basename of tex file
 LATEX = 'latexmk'
 DVIP = 'dvipdfmx'
 VIEW_PDF = 'evince'
